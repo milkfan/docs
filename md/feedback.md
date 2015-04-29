@@ -66,7 +66,7 @@ AVUserFeedbackAgent *agent = [AVUserFeedbackAgent sharedInstance];
        </activity>
     </application>
 ```
-
+同样的，你需要继承 Application 类，并且在 onCreate() 方法中调用 AVOSCloud.initialize(AppId,AppKey) 来进行初始化。
 *注：由于一些UI的原因，Feedback SDK的最低API level要求是12，如您需要更低的版本支持，请参照文档中的高级定制部分进行开发。
 
 如果依然遇到Actionbar相关的NPE问题，请检查Application Theme，确保ThreadActivity中的Actionbar。*
